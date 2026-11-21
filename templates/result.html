@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Fraud Detection Result</title>
+    <meta charset="UTF-8">
+    <title>Fraud Detection Results</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
     <div class="container">
-        <h1>Transaction Result</h1>
+        <h1>Credit Card Fraud Detection Results</h1>
 
-        {% if prediction == 1 %}
-            <h2 style="color:red;">⚠ Fraud Transaction Detected!</h2>
-        {% else %}
-            <h2 style="color:green;">✓ Genuine Transaction</h2>
-        {% endif %}
+        <h2>Total Transactions: {{ total }}</h2>
 
-        <a href="/">Go Back</a>
+        <h2 style="color:red;">Fraud Transactions: {{ fraud }}</h2>
+
+        <h2 style="color:green;">Genuine Transactions: {{ genuine }}</h2>
+
+        <h2>Transaction Details</h2>
+
+        <div>
+            {{ tables | safe }}
+        </div>
+
+        <br>
+        <a href="/">Back to Home</a>
     </div>
+
 </body>
 </html>
