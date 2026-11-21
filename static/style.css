@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111827;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a,
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #111827, #1d4ed8);
+    color: white;
+    padding: 70px 8%;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.tag {
+    color: #93c5fd;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero-content > p {
+    color: #dbeafe;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.upload-card {
+    background: white;
+    color: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 550px;
+    margin-top: 35px;
+    box-shadow: 0 10px 30px #0002;
+}
+
+.upload-card h2 {
+    margin-bottom: 10px;
+}
+
+.upload-card p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px dashed #94a3b8;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.upload-card small {
+    display: block;
+    margin-top: 15px;
+    color: #64748b;
+}
+
+.features {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+.feature-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 4px 15px #0001;
+}
+
+.feature-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #64748b;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.result-section {
+    padding: 45px 5%;
+    text-align: center;
+}
+
+.subtitle {
+    color: #64748b;
+    margin: 10px 0 30px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    min-width: 200px;
+    box-shadow: 0 4px 15px #0001;
+}
+
+.stat-card p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.fraud p {
+    color: #dc2626;
+}
+
+.genuine p {
+    color: #16a34a;
+}
+
+.table-container {
+    background: white;
+    margin: 35px auto;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 1000px;
+}
+
+.table-scroll {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.table th {
+    background: #1e293b;
+    color: white;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    color: #cbd5e1;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .upload-card {
+        padding: 20px;
+    }
+}
