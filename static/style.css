@@ -292,3 +292,226 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* =================================
+   RESULT PAGE DESIGN
+================================= */
+
+.navbar > a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar > a:hover {
+    color: #60a5fa;
+}
+
+/* Result Section */
+
+.result-section {
+    min-height: 75vh;
+    padding: 65px 8%;
+    background: radial-gradient(
+        circle at top right,
+        #172d50,
+        #081225 60%
+    );
+}
+
+.result-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.result-header .tag {
+    margin-bottom: 18px;
+}
+
+.result-section h1 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.result-section .subtitle {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* Summary Cards */
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto 45px;
+}
+
+.stat-card {
+    padding: 30px;
+    text-align: center;
+    background: #111f35;
+    border: 1px solid #263954;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+.stat-card h3 {
+    font-size: 16px;
+    color: #94a3b8;
+    margin-bottom: 12px;
+}
+
+.stat-card p {
+    font-size: 38px;
+    font-weight: 700;
+    color: #60a5fa;
+}
+
+.stat-card.fraud p {
+    color: #f87171;
+}
+
+.stat-card.genuine p {
+    color: #4ade80;
+}
+
+/* Prediction Table */
+
+.table-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #111f35;
+    border: 1px solid #263954;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.table-heading {
+    margin-bottom: 25px;
+}
+
+.table-heading h2 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.table-heading p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* Scrollable Table */
+
+.table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+.table-scroll table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background: #0b172b;
+    color: #cbd5e1;
+}
+
+.table-scroll th {
+    padding: 15px;
+    background: #1e3a5f;
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+}
+
+.table-scroll td {
+    padding: 13px 15px;
+    border-bottom: 1px solid #263954;
+    font-size: 14px;
+}
+
+.table-scroll tr:hover td {
+    background: #142747;
+}
+
+/* Back Button */
+
+.result-actions {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #3b82f6;
+    transform: translateY(-2px);
+}
+
+/* Result Page Mobile Responsive */
+
+@media (max-width: 768px) {
+    .result-section {
+        padding: 45px 5%;
+    }
+
+    .result-section h1 {
+        font-size: 32px;
+    }
+
+    .result-section .subtitle {
+        font-size: 14px;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .stat-card {
+        padding: 22px;
+    }
+
+    .stat-card p {
+        font-size: 32px;
+    }
+
+    .table-container {
+        padding: 20px 15px;
+    }
+
+    .table-heading h2 {
+        font-size: 22px;
+    }
+
+    .table-scroll table {
+        min-width: 600px;
+    }
+
+    .back-button {
+        width: 100%;
+        text-align: center;
+    }
+}

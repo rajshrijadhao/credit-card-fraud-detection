@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,40 +8,57 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">🛡️ FraudGuard</div>
-        <div class="nav-links">
-            <a href="/">Home</a>
-            <a href="#about">About</a>
-        </div>
-    </nav>
-
     <section class="hero">
         <div class="hero-content">
-            <span class="tag">DATA MINING AND DATA WAREHOUSING PROJECT</span>
-            <h1>Credit Card<br><span>Fraud Detection</span></h1>
+
+            <span class="tag">
+                DATA MINING AND DATA WAREHOUSING PROJECT
+            </span>
+
+            <h1>
+                Credit Card<br>
+                <span>Fraud Detection</span>
+            </h1>
+
             <p>
                 Detect suspicious credit card transactions using
                 Machine Learning and Data Mining techniques.
             </p>
 
             <div class="upload-card">
-                <h2>Analyze Transactions</h2>
-                <p>Upload your credit card transaction CSV dataset.</p>
 
-                <form action="/predict" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="file" accept=".csv" required>
-                    <button type="submit">Detect Fraud →</button>
+                <h2>Analyze Transactions</h2>
+
+                <p>
+                    Upload your credit card transaction CSV dataset.
+                </p>
+
+                <form action="/predict" method="POST"
+                      enctype="multipart/form-data">
+
+                    <input type="file" name="file"
+                           accept=".csv" required>
+
+                    <button type="submit">
+                        Detect Fraud →
+                    </button>
+
                 </form>
 
-                <small>CSV format only • Use the project dataset</small>
+                <small>
+                    CSV format only • Use the project dataset
+                </small>
+
             </div>
         </div>
     </section>
 
     <section class="features" id="about">
+
         <h2>Project Features</h2>
+
         <div class="feature-container">
+
             <div class="feature-card">
                 <div class="feature-icon">📊</div>
                 <h3>Data Analysis</h3>
@@ -59,6 +76,7 @@
                 <h3>Fraud Detection</h3>
                 <p>Predict whether transactions are genuine or suspicious.</p>
             </div>
+
         </div>
     </section>
 
